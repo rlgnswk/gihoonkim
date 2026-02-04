@@ -7,11 +7,8 @@ author_profile: true
 
 I am a Ph.D. student in Data Science at **Seoul National University**, advised by **Prof. Taesup Kim** (Learning Adaptation Algorithm Lab).
 My research broadly studies **diffusion models**—their learning and inference mechanisms, guidance/control behaviors, and how these translate into practical capabilities for generative modeling.
-Within this direction, I am particularly interested in **personalized diffusion**, aiming to maintain identity/attribute consistency while preventing *distributional drift* during adaptation, as well as **multimodal generation** (text-to-image, video).
+Within this direction, I am particularly interested in **personalized diffusion**, aiming to maintain identity/attribute consistency while preventing *distributional drift* during adaptation, as well as **multimodal generation** (text-to-image, video). Previously, I received my M.S. from KAIST (Visual Media Lab) and my B.S. from Handong University. I also worked as a research intern at NAVER CLOVA.
 
-Previously, I received my M.S. from KAIST (VIsual Media Lab) and my B.S. from Handong University. I also worked as a research intern at NAVER CLOVA.
-
-<div class="research-interests-block">
 
 ## Research Interests
 
@@ -26,7 +23,6 @@ Previously, I received my M.S. from KAIST (VIsual Media Lab) and my B.S. from Ha
   - guidance and control for targeted edits/attributes
   - diffusion for inverse problems
 
-</div>
 
 If you would like to discuss research or potential collaboration, feel free to reach out: **gihoon.kim@snu.ac.kr**.
 
