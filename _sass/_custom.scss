@@ -43,3 +43,70 @@
     max-width: 420px;
   }
 }
+
+/* Publications list alignment */
+.pub-item{
+  display: grid;
+  grid-template-columns: 140px 1fr 140px; /* thumb | main | side */
+  gap: 18px;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.pub-thumb{
+  width: 140px;
+  height: 90px;           /* 고정 높이로 줄맞춤 */
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.03);
+}
+
+.pub-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* 이미지 비율 달라도 동일 박스에 꽉 채움 */
+  display: block;
+}
+
+.pub-title{
+  margin: 0;
+  line-height: 1.25;
+}
+
+.pub-excerpt{
+  margin: 6px 0 0 0;
+  opacity: 0.9;
+}
+
+.pub-side{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.pub-meta{
+  text-align: right;
+  opacity: 0.9;
+  line-height: 1.2;
+}
+
+/* 모바일에서는 1열로 자연스럽게 */
+@media (max-width: 700px){
+  .pub-item{
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .pub-thumb{
+    width: 100%;
+    height: 180px;
+  }
+  .pub-side{
+    align-items: flex-start;
+    text-align: left;
+  }
+  .pub-meta{
+    text-align: left;
+  }
+}

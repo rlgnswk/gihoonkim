@@ -1,37 +1,37 @@
 {% include base_path %}
 
-<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+<article class="pub-item" itemscope itemtype="http://schema.org/CreativeWork">
 
-  {%- comment -%} Thumbnail (teaser) {%- endcomment -%}
-  {% if post.header.teaser %}
-    <div class="archive__item-teaser">
+  <!-- Left: thumbnail -->
+  <div class="pub-thumb">
+    {% if post.header.teaser %}
       <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title | escape }}">
+    {% endif %}
+  </div>
+
+  <!-- Middle: title + (optional excerpt) -->
+  <div class="pub-main">
+    <h2 class="pub-title" itemprop="headline">
+      {{ post.title }}
+    </h2>
+
+    {% if post.excerpt %}
+      <p class="pub-excerpt" itemprop="description">
+        {{ post.excerpt | markdownify | strip_html }}
+      </p>
+    {% endif %}
+  </div>
+
+  <!-- Right: venue/year + paper button -->
+  <div class="pub-side">
+    <div class="pub-meta">
+      {% if post.venue %}<div><em>{{ post.venue }}</em></div>{% endif %}
+      {% if post.year %}<div>{{ post.year }}</div>{% endif %}
     </div>
-  {% endif %}
 
-  {%- comment -%} Title is plain text (NOT a link) {%- endcomment -%}
-  <h2 class="archive__item-title" itemprop="headline">
-    {{ post.title }}
-  </h2>
-
-  {%- comment -%} Left: venue/year, Right: Paper button only {%- endcomment -%}
-  <p class="page__meta" style="display:flex; justify-content:space-between; align-items:center; gap:12px;">
-    <span>
-      {% if post.venue %}<em>{{ post.venue }}</em>{% endif %}
-      {% if post.year %} · {{ post.year }}{% endif %}
-    </span>
-
-    <span>
-      {% if post.paperurl %}
-        <a class="btn btn--primary" href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
-      {% endif %}
-    </span>
-  </p>
-
-  {% if post.excerpt %}
-    <p class="archive__item-excerpt" itemprop="description">
-      {{ post.excerpt | markdownify | strip_html }}
-    </p>
-  {% endif %}
+    {% if post.paperurl %}
+      <a class="btn btn--primary pub-paper" href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
+    {% endif %}
+  </div>
 
 </article>

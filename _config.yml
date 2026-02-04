@@ -12,10 +12,10 @@ url: "https://rlgnswk.github.io"
 baseurl: "/gihoonkim"
 repository: "rlgnswk/gihoonkim"
 
+# IMPORTANT: Fix author fields for author_profile.html
 author:
   name: "GiHoon Kim"
-  author:
-    avatar: "/images/profile.jpg"
+  avatar: "/images/profile.jpg"  # will resolve to <baseurl>/images/profile.jpg
   bio: "Ph.D. student working on personalized diffusion (distribution drift, identity consistency, semantic anchoring) and multimodal generative modeling (text-to-image, video generation)."
   location: "Seoul, Republic of Korea"
   employer: "Seoul National University"
