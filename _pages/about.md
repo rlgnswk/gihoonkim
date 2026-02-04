@@ -14,6 +14,7 @@ I also worked as a research intern at **NAVER CLOVA** (Image/Vision), focusing o
 
 
 
+
 ## Research Interests
 
 - **Personalized Diffusion**
@@ -28,6 +29,9 @@ I also worked as a research intern at **NAVER CLOVA** (Image/Vision), focusing o
   - diffusion for inverse problems
 
 If you would like to discuss research or potential collaboration, feel free to reach out: **gihoon.kim@snu.ac.kr**.
+
+- CV (PDF): [Download]({{ '/files/GiHoonKim_CV.pdf' | relative_url }})
+
 
 ## Highlights
 
