@@ -1,0 +1,45 @@
+/* Publications list: fixed 160px teaser on the left */
+.archive__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.archive__item-teaser {
+  flex: 0 0 160px;
+  width: 160px;
+  max-width: 160px;
+}
+
+.archive__item-teaser img {
+  width: 160px;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+/* Text column */
+.archive__item-title,
+.archive__item-excerpt,
+.page__meta,
+.page__date,
+.archive__item p {
+  flex: 1 1 auto;
+}
+
+/* Mobile: stack */
+@media (max-width: 700px) {
+  .archive__item {
+    flex-direction: column;
+  }
+  .archive__item-teaser {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+  .archive__item-teaser img {
+    width: 100%;
+    max-width: 420px;
+  }
+}
