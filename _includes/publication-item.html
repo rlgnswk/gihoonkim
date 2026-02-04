@@ -1,0 +1,59 @@
+{%- comment -%}
+Renders a single publication item.
+Expected fields in each publication markdown:
+  - title
+  - venue / year (optional)
+  - paperurl (optional)
+  - header.teaser OR image (optional)
+{%- endcomment -%}
+
+{%- assign pub = include.pub -%}
+
+<article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <div class="archive__item-teaser" style="float:left; width: 220px; margin-right: 24px;">
+    {%- if pub.header and pub.header.teaser -%}
+      <img src="{{ pub.header.teaser | relative_url }}" alt="{{ pub.title | escape }}" style="width:100%; height:auto; border-radius: 6px;">
+    {%- elsif pub.image -%}
+      <img src="{{ pub.image | relative_url }}" alt="{{ pub.title | escape }}" style="width:100%; height:auto; border-radius: 6px;">
+    {%- else -%}
+      {#-- teaser 없는 경우 빈 공간 최소화 --#}
+      <div style="width:220px; height:1px;"></div>
+    {%- endif -%}
+  </div>
+
+  <div class="archive__item-body" style="overflow:hidden;">
+    <!-- Title (NOT a link) -->
+    <h2 class="archive__item-title" itemprop="headline" style="margin-top: 0;">
+      {{ pub.title }}
+    </h2>
+
+    {%- comment -%} Right-side meta + Paper link {%- endcomment -%}
+    <div class="archive__item-meta" style="display:flex; gap:16px; align-items:flex-start; justify-content:space-between;">
+      <div style="color:#666; line-height:1.6;">
+        {%- if pub.venue -%}
+          <div>Published in <em>{{ pub.venue }}</em></div>
+        {%- endif -%}
+        {%- if pub.status -%}
+          <div>{{ pub.status }}</div>
+        {%- endif -%}
+        {%- if pub.year -%}
+          <div>{{ pub.year }}</div>
+        {%- endif -%}
+      </div>
+
+      <div style="white-space:nowrap;">
+        {%- if pub.paperurl -%}
+          <a class="btn btn--primary" href="{{ pub.paperurl }}" target="_blank" rel="noopener">Paper</a>
+        {%- endif -%}
+      </div>
+    </div>
+
+    {%- if pub.excerpt -%}
+      <p class="archive__item-excerpt" itemprop="description" style="margin-bottom:0.25rem;">
+        {{ pub.excerpt | markdownify | strip_html }}
+      </p>
+    {%- endif -%}
+  </div>
+
+  <div style="clear:both;"></div>
+</article>

@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  <div class="archive">
+    {% if page.title %}
+      <h1 class="page__title">{{ page.title }}</h1>
+    {% endif %}
+
+    {%- comment -%}
+    This layout expects your publications to be in a Jekyll collection named "publications",
+    e.g. _publications/*.md with front matter fields.
+    {%- endcomment -%}
+
+    {%- assign pubs = site.publications | sort: "year" | reverse -%}
+
+    {%- for pub in pubs -%}
+      {% include publication-item.html pub=pub %}
+      <hr style="border:none; border-top:1px solid #eee; margin: 18px 0;">
+    {%- endfor -%}
+  </div>
+</div>
