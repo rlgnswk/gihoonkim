@@ -26,7 +26,7 @@ Within this direction, I am particularly interested in **personalized diffusion*
 
 If you would like to discuss research or potential collaboration, feel free to reach out: **gihoon.kim@snu.ac.kr**.
 
-- CV (PDF): [Download]({{ "/files/Gihoon_CV.pdf" | relative_url }})
+- CV (PDF): [Download]({{ '/files/Gihoon_CV.pdf' | relative_url }})
 
 
 ## Highlights
