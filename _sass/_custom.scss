@@ -110,3 +110,21 @@
     text-align: left;
   }
 }
+
+
+/* Research Interests block */
+.research-interests-block {
+  background: #e8f2ff;   /* 연한 파랑 */
+  border: 1px solid #b7d6ff;
+  border-radius: 12px;
+  padding: 18px 20px;
+  margin: 18px 0 24px 0;
+}
+
+.research-interests-block h2 {
+  margin-top: 0;
+}
+
+.research-interests-block ul {
+  margin-bottom: 0;
+}

@@ -9,11 +9,9 @@ I am a Ph.D. student in Data Science at **Seoul National University**, advised b
 My research broadly studies **diffusion models**—their learning and inference mechanisms, guidance/control behaviors, and how these translate into practical capabilities for generative modeling.
 Within this direction, I am particularly interested in **personalized diffusion**, aiming to maintain identity/attribute consistency while preventing *distributional drift* during adaptation, as well as **multimodal generation** (text-to-image, video).
 
-Previously, I received my M.S. from **KAIST** and my B.S. from **Handong Global University**.
-I also worked as a research intern at **NAVER CLOVA** (Image/Vision), focusing on 3D-aware generative pipelines.
+Previously, I received my M.S. from KAIST (VIsual Media Lab) and my B.S. from Handong University. I also worked as a research intern at NAVER CLOVA.
 
-
-
+<div class="research-interests-block">
 
 ## Research Interests
 
@@ -28,9 +26,11 @@ I also worked as a research intern at **NAVER CLOVA** (Image/Vision), focusing o
   - guidance and control for targeted edits/attributes
   - diffusion for inverse problems
 
+</div>
+
 If you would like to discuss research or potential collaboration, feel free to reach out: **gihoon.kim@snu.ac.kr**.
 
-- CV (PDF): [Download]({{ '/files/GiHoonKim_CV.pdf' | relative_url }})
+- CV (PDF): [Download]({{ "/files/Gihoon_CV.pdf" | relative_url }})
 
 
 ## Highlights
