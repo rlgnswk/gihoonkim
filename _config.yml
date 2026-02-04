@@ -9,9 +9,10 @@ name: "GiHoon Kim"
 description: "Ph.D. Student @ Seoul National University | Diffusion / Personalization / Multimodal"
 
 # GitHub Pages (user page)
-url: "https://gihoonkim.github.io"
-baseurl: ""
+url: "https://rlgnswk.github.io"
+baseurl: "/gihoonkim"
 repository: "rlgnswk/gihoonkim"
+
 
 # Author (sidebar)
 author:
