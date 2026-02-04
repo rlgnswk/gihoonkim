@@ -57,3 +57,14 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
   - jemoji
+
+exclude:
+  - README.md
+  - Dockerfile
+  - docker-compose.yaml
+  - Gemfile
+  - package.json
+  - node_modules
+  - scripts
+  - markdown_generator
+  - talkmap*
