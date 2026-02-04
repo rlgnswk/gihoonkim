@@ -14,7 +14,8 @@ repository: "rlgnswk/gihoonkim"
 
 author:
   name: "GiHoon Kim"
-  avatar: "/images/profile.jpg"
+  author:
+    avatar: "profile.jpg"
   bio: "Ph.D. student working on personalized diffusion (distribution drift, identity consistency, semantic anchoring) and multimodal generative modeling (text-to-image, video generation)."
   location: "Seoul, Republic of Korea"
   employer: "Seoul National University"
