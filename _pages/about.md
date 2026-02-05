@@ -28,7 +28,7 @@ If you would like to discuss research or potential collaboration, feel free to r
 - CV (PDF): [Download]({{ '/files/Gihoon_CV.pdf' | relative_url }})
 
 
-## Highlights
+## News
 
 - First-author paper accepted at **ICLR 2026**: *Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift*
 - Open-source research implementations (one repository reached **65 GitHub stars**)
