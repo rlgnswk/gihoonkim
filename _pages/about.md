@@ -9,6 +9,14 @@ I am a Ph.D. student in Data Science at **Seoul National University**, advised b
 My research broadly studies **diffusion models**—their learning and inference mechanisms, guidance/control behaviors, and how these translate into practical capabilities for generative modeling.
 Within this direction, I am particularly interested in **personalized diffusion**, aiming to maintain identity/attribute consistency while preventing *distributional drift* during adaptation, as well as **multimodal generation** (text-to-image, video).
 
+## Education
+
+- **Seoul National University**, Ph.D. in Data Science, Mar. 2024 - Present  
+  Learning Adaptation Algorithm Lab, Advisor: **Prof. Taesup Kim**
+- **KAIST**, M.S. in Culture Technology, Sep. 2021 - Dec. 2023  
+  Visual Media Lab, Advisor: **Prof. Junyong Noh**
+- **Handong Global University**, B.S. in Computer Science & Electronic Engineering, Mar. 2015 - Aug. 2021
+
 ## Research Interests
 
 - **Personalized Diffusion**
