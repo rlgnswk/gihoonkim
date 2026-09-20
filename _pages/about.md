@@ -32,6 +32,15 @@ I am a Ph.D. student in Data Science at <strong>Seoul National University</stron
   </div>
 </div>
 
+## Work Experience
+
+<ul class="compact-list">
+  <li>
+    <strong>NAVER CLOVA</strong>
+    <span>Research Intern, Image/Vision, 2022 - 2023</span>
+  </li>
+</ul>
+
 ## Education
 
 <ul class="compact-list">
