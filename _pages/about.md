@@ -54,17 +54,5 @@ I am always happy to discuss research ideas or potential collaboration. Please f
 ## News
 
 - **ICLR 2026**: *Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift*
-- Released open-source research implementations for diffusion personalization and 3D talking head synthesis.
-
-## Academic Service
-
-<ul class="compact-list">
-  <li>
-    <strong>Reviewer</strong>
-    <span>NeurIPS 2026</span>
-  </li>
-  <li>
-    <strong>Reviewer</strong>
-    <span>ICLR 2027</span>
-  </li>
-</ul>
+- [**NeRFFaceSpeech_Code**](https://github.com/rlgnswk/NeRFFaceSpeech_Code) reached **65 GitHub stars**.
+- Served as a reviewer for **NeurIPS 2026** and **ICLR 2027**.
