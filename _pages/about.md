@@ -57,3 +57,16 @@ I am always happy to discuss research ideas or potential collaboration. Please f
 
 - **ICLR 2026**: *Preserve and Personalize: Personalized Text-to-Image Diffusion Models without Distributional Drift*
 - Released open-source research implementations for diffusion personalization and 3D talking head synthesis.
+
+## Academic Service
+
+<ul class="service-list">
+  <li>
+    <strong>Reviewer</strong>
+    <span>NeurIPS 2026</span>
+  </li>
+  <li>
+    <strong>Reviewer</strong>
+    <span>ICLR 2027</span>
+  </li>
+</ul>
