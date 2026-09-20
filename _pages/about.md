@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <p class="intro-lede">
-I am a Ph.D. student in Data Science at <strong>Seoul National University</strong>, advised by <strong>Prof. Taesup Kim</strong> in the Learning Adaptation Algorithm Lab. My research focuses on generative modeling and controllable generation, especially how diffusion models can adapt to new concepts without losing their pretrained generative prior. I work on personalized text-to-image diffusion, guidance mechanisms, and multimodal generation across images and video.
+I am a Ph.D. student in Data Science at <strong>Seoul National University</strong>, advised by <strong>Prof. Taesup Kim</strong> in the Learning Adaptation Algorithm Lab. My research focuses on generative modeling and controllable generation, especially how diffusion and flow-based models learn, infer, and adapt without losing their pretrained generative priors.
 </p>
 
 <div class="quick-links" aria-label="Quick links">
@@ -19,16 +19,16 @@ I am a Ph.D. student in Data Science at <strong>Seoul National University</stron
 
 <div class="focus-list">
   <div class="focus-item">
-    <strong>Personalized diffusion</strong>
-    <span>Maintaining identity and attribute consistency while reducing distributional drift during adaptation.</span>
-  </div>
-  <div class="focus-item">
-    <strong>Multimodal generative modeling</strong>
-    <span>Building practical text-to-image and video generation systems with stable behavior.</span>
+    <strong>Generative modeling</strong>
+    <span>Understanding diffusion and flow-based models through their learning dynamics, inference behavior, and distributional properties.</span>
   </div>
   <div class="focus-item">
     <strong>Controllable generation</strong>
-    <span>Understanding guidance, targeted editing, and diffusion-based inverse problems.</span>
+    <span>Developing guidance, conditioning, and adaptation methods that steer generation while preserving model priors.</span>
+  </div>
+  <div class="focus-item">
+    <strong>Applications</strong>
+    <span>Applying these ideas to personalization, text-to-image and video generation, inverse problems, and multimodal systems.</span>
   </div>
 </div>
 
