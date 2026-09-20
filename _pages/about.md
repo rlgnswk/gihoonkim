@@ -27,8 +27,8 @@ I am a Ph.D. student in Data Science at <strong>Seoul National University</stron
     <span>Developing guidance, conditioning, and adaptation methods that steer generation while preserving model priors.</span>
   </div>
   <div class="focus-item">
-    <strong>Applications</strong>
-    <span>Applying these ideas to personalization, text-to-image and video generation, inverse problems, and multimodal systems.</span>
+    <strong>Adaptive applications</strong>
+    <span>Extending these principles to domains where generative models can be adapted, including personalization, multimodal systems, inverse problems, and LLM-based applications.</span>
   </div>
 </div>
 
