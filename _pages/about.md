@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <p class="intro-lede">
-I am a Ph.D. student in Data Science at <strong>Seoul National University</strong>, advised by <strong>Prof. Taesup Kim</strong> in the Learning Adaptation Algorithm Lab. My research studies diffusion models, with a focus on personalization, controllability, and multimodal generation.
+I am a Ph.D. student in Data Science at <strong>Seoul National University</strong>, advised by <strong>Prof. Taesup Kim</strong> in the Learning Adaptation Algorithm Lab. My research focuses on generative modeling and controllable generation, especially how diffusion models can adapt to new concepts without losing their pretrained generative prior. I work on personalized text-to-image diffusion, guidance mechanisms, and multimodal generation across images and video.
 </p>
 
 <div class="quick-links" aria-label="Quick links">
