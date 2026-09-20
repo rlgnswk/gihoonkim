@@ -1,37 +1,44 @@
 {% include base_path %}
 
-<article class="pub-item" itemscope itemtype="http://schema.org/CreativeWork">
+{% assign excerpt_text = post.excerpt | markdownify | strip_html | strip_newlines | strip %}
 
-  <!-- Left: thumbnail -->
-  <div class="pub-thumb">
-    {% if post.header.teaser %}
+<article class="pub-item{% unless post.header.teaser %} pub-item--no-thumb{% endunless %}" itemscope itemtype="http://schema.org/CreativeWork">
+
+  {% if post.header.teaser %}
+    <a class="pub-thumb" href="{{ post.url | relative_url }}" aria-label="{{ post.title | escape }}">
       <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title | escape }}">
-    {% endif %}
-  </div>
+    </a>
+  {% endif %}
 
-  <!-- Middle: title + (optional excerpt) -->
   <div class="pub-main">
+    <p class="pub-venue">
+      {% if post.venue %}<em>{{ post.venue }}</em>{% endif %}
+      {% if post.year %}<span>{{ post.year }}</span>{% endif %}
+    </p>
+
     <h2 class="pub-title" itemprop="headline">
-      {{ post.title }}
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
     </h2>
 
-    {% if post.excerpt %}
-      <p class="pub-excerpt" itemprop="description">
-        {{ post.excerpt | markdownify | strip_html }}
-      </p>
+    {% if post.authors %}
+      <p class="pub-authors">{{ post.authors }}</p>
     {% endif %}
-  </div>
 
-  <!-- Right: venue/year + paper button -->
-  <div class="pub-side">
-    <div class="pub-meta">
-      {% if post.venue %}<div><em>{{ post.venue }}</em></div>{% endif %}
-      {% if post.year %}<div>{{ post.year }}</div>{% endif %}
+    {% if excerpt_text != "" %}
+      <p class="pub-excerpt" itemprop="description">{{ excerpt_text }}</p>
+    {% endif %}
+
+    <div class="pub-links">
+      {% unless post.paperurl == blank %}
+        <a class="pub-link" href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
+      {% endunless %}
+      {% unless post.projecturl == blank %}
+        <a class="pub-link" href="{{ post.projecturl }}" target="_blank" rel="noopener">Project</a>
+      {% endunless %}
+      {% unless post.codeurl == blank %}
+        <a class="pub-link" href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>
+      {% endunless %}
     </div>
-
-    {% if post.paperurl %}
-      <a class="btn btn--primary pub-paper" href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
-    {% endif %}
   </div>
 
 </article>
