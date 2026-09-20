@@ -34,20 +34,18 @@ I am a Ph.D. student in Data Science at <strong>Seoul National University</stron
 
 ## Education
 
-<ul class="timeline-list">
+<ul class="compact-list">
   <li>
     <strong>Seoul National University</strong>
-    <span>Ph.D. in Data Science, Mar. 2024 - Present</span>
-    <span>Learning Adaptation Algorithm Lab, Advisor: Prof. Taesup Kim</span>
+    <span>Ph.D. in Data Science, 2024 - Present</span>
   </li>
   <li>
     <strong>KAIST</strong>
-    <span>M.S. in Culture Technology, Sep. 2021 - Dec. 2023</span>
-    <span>Visual Media Lab, Advisor: Prof. Junyong Noh</span>
+    <span>M.S. in Culture Technology, 2021 - 2023</span>
   </li>
   <li>
     <strong>Handong Global University</strong>
-    <span>B.S. in Computer Science & Electronic Engineering, Mar. 2015 - Aug. 2021</span>
+    <span>B.S. in Computer Science & Electronic Engineering, 2015 - 2021</span>
   </li>
 </ul>
 
@@ -60,7 +58,7 @@ I am always happy to discuss research ideas or potential collaboration. Please f
 
 ## Academic Service
 
-<ul class="service-list">
+<ul class="compact-list">
   <li>
     <strong>Reviewer</strong>
     <span>NeurIPS 2026</span>
