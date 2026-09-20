@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 <p class="intro-lede">
-I am a Ph.D. student in Data Science at <strong>Seoul National University</strong>, advised by <strong>Prof. Taesup Kim</strong> in the Learning Adaptation Algorithm Lab. My research focuses on generative modeling and controllable generation, especially how diffusion and flow-based models learn, infer, and adapt without losing their pretrained generative priors.
+I am a Ph.D. student in Data Science at <strong>Seoul National University</strong>, advised by <strong>Prof. Taesup Kim</strong> in the Learning Adaptation Algorithm Lab. My research focuses on generative modeling and controllable generation, especially how diffusion and flow-based models can be theoretically grounded, reliably controlled, and applied to diverse problem settings.
 </p>
 
 <div class="quick-links" aria-label="Quick links">
