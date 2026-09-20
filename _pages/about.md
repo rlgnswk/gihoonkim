@@ -36,8 +36,13 @@ I am a Ph.D. student in Data Science at <strong>Seoul National University</stron
 
 <ul class="compact-list">
   <li>
-    <strong>NAVER CLOVA</strong>
-    <span>Research Intern, Image/Vision, 2022 - 2023</span>
+    <strong>NAVER CLOVA (Cloud)</strong>
+    <span>Research Intern, Image/Vision, Sep. 2022 - Mar. 2023</span>
+    <span>Developed 3D-aware hairstyle transfer and 3D-consistent generative pipelines.</span>
+  </li>
+  <li>
+    <strong>Teaching Assistant</strong>
+    <span>Programming, autonomous driving, and real-time learning courses, 2019 - 2024</span>
   </li>
 </ul>
 
