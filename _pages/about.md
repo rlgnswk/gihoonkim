@@ -46,6 +46,19 @@ I am a Ph.D. student in Data Science at <strong>Seoul National University</stron
   </li>
 </ul>
 
+## Awards / Grants
+
+<ul class="compact-list">
+  <li>
+    <strong>NRF Research Encouragement Grant</strong>
+    <span>Principal Investigator, National Research Foundation of Korea, 2025 - 2026</span>
+  </li>
+  <li>
+    <strong>Undergraduate Paper Award</strong>
+    <span>ICROS (Institute of Control, Robotics and Systems), 2020</span>
+  </li>
+</ul>
+
 ## Education
 
 <ul class="compact-list">
