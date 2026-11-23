@@ -1,24 +1,60 @@
-{% if post.paperurl != blank %}{% assign pub_href = post.paperurl %}{% else %}{% assign pub_href = post.url | relative_url %}{% endif %}
-<article class="pub-item" itemscope itemtype="http://schema.org/ScholarlyArticle">
+{% include base_path %}
+
+{% assign excerpt_text = post.summary | default: post.excerpt | markdownify | strip_html | strip_newlines | strip %}
+{% if post.paperurl != blank %}
+  {% assign pub_href = post.paperurl %}
+{% elsif post.programurl != blank %}
+  {% assign pub_href = post.programurl %}
+{% else %}
+  {% assign pub_href = post.url | relative_url %}
+{% endif %}
+
+<article class="pub-item{% unless post.header.teaser %} pub-item--no-thumb{% endunless %}" itemscope itemtype="http://schema.org/CreativeWork">
+
   {% if post.header.teaser %}
-    <a class="pub-thumb" href="{{ pub_href }}" {% if post.paperurl != blank %}target="_blank" rel="noopener noreferrer"{% endif %} aria-label="Read {{ post.title | escape }}">
-      <img src="{{ post.header.teaser | relative_url }}" alt="" loading="lazy">
+    <a class="pub-thumb" href="{{ pub_href }}" aria-label="{{ post.title | escape }}">
+      <img src="{{ post.header.teaser | relative_url }}" alt="{{ post.title | escape }}">
     </a>
-  {% else %}
-    <div class="pub-thumb pub-thumb--typographic" aria-hidden="true"><span>{{ post.short_label | default: "Research" }}</span></div>
   {% endif %}
+
   <div class="pub-main">
-    <p class="pub-venue">{{ post.venue }}</p>
-    <h3 class="pub-title" itemprop="headline"><a href="{{ pub_href }}" {% if post.paperurl != blank %}target="_blank" rel="noopener noreferrer"{% endif %}>{{ post.title }}</a></h3>
-    {% if post.authors %}<p class="pub-authors">{{ post.authors | replace: "GiHoon Kim", "<strong>GiHoon Kim</strong>" | replace: "Gihoon Kim", "<strong>Gihoon Kim</strong>" }}</p>{% endif %}
-    {% if post.summary %}<p class="pub-summary" itemprop="description">{{ post.summary }}</p>{% endif %}
+    <p class="pub-venue">
+      {% if post.venue %}<em>{{ post.venue }}</em>{% endif %}
+      {% if post.year %}<span>{{ post.year }}</span>{% endif %}
+    </p>
+
+    <h2 class="pub-title" itemprop="headline">
+      <a href="{{ pub_href }}">{{ post.title }}</a>
+    </h2>
+
+    {% if post.authors %}
+      <p class="pub-authors">{{ post.authors }}</p>
+    {% endif %}
+
+    {% if excerpt_text != "" %}
+      <p class="pub-excerpt" itemprop="description">{{ excerpt_text }}</p>
+    {% endif %}
+
     <div class="pub-links">
-      {% if post.paperurl != blank %}<a href="{{ post.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
-      {% if post.projecturl != blank %}<a href="{{ post.projecturl }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
-      {% if post.codeurl != blank %}<a href="{{ post.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
-      {% if post.videourl != blank %}<a href="{{ post.videourl }}" target="_blank" rel="noopener noreferrer">Video</a>{% endif %}
-      {% if post.dataseturl != blank %}<a href="{{ post.dataseturl }}" target="_blank" rel="noopener noreferrer">Dataset</a>{% endif %}
-      {% if post.programurl != blank %}<a href="{{ post.programurl }}" target="_blank" rel="noopener noreferrer">Program</a>{% endif %}
+      {% unless post.paperurl == blank %}
+        <a class="pub-link" href="{{ post.paperurl }}" target="_blank" rel="noopener">Paper</a>
+      {% endunless %}
+      {% unless post.projecturl == blank %}
+        <a class="pub-link" href="{{ post.projecturl }}" target="_blank" rel="noopener">Project</a>
+      {% endunless %}
+      {% unless post.codeurl == blank %}
+        <a class="pub-link" href="{{ post.codeurl }}" target="_blank" rel="noopener">Code</a>
+      {% endunless %}
+      {% unless post.videourl == blank %}
+        <a class="pub-link" href="{{ post.videourl }}" target="_blank" rel="noopener">Video</a>
+      {% endunless %}
+      {% unless post.dataseturl == blank %}
+        <a class="pub-link" href="{{ post.dataseturl }}" target="_blank" rel="noopener">Dataset</a>
+      {% endunless %}
+      {% unless post.programurl == blank %}
+        <a class="pub-link" href="{{ post.programurl }}" target="_blank" rel="noopener">Program</a>
+      {% endunless %}
     </div>
   </div>
+
 </article>

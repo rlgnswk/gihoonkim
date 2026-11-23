@@ -11,6 +11,6 @@ paperurl: "https://aclanthology.org/2025.findings-emnlp.559/"
 projecturl: ""
 codeurl: ""
 header:
-    teaser: /images/pubs/thumbs/sovereign-llm-emnlp25-findings.webp
+    teaser: /images/pubs/sovereign-llm-emnlp25-findings.png
 ---
 

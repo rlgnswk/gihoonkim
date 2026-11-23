@@ -15,7 +15,7 @@ repository: "rlgnswk/gihoonkim"
 # IMPORTANT: Fix author fields for author_profile.html
 author:
   name: "GiHoon Kim"
-  avatar: "profile.webp"
+  avatar: "profile.jpg"
   bio: "Ph.D. student researching controllable generation with diffusion models."
   location: "Seoul, Republic of Korea"
   employer: "Seoul National University"

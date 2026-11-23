@@ -11,6 +11,6 @@ paperurl: "https://arxiv.org/abs/2511.22245"
 projecturl: ""
 codeurl: ""
 header:
-    teaser: /images/pubs/thumbs/semantic-anchoring-arxiv25.webp
+    teaser: /images/pubs/semantic-anchoring-arxiv25.png
 ---
 

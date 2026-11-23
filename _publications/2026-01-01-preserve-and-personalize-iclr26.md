@@ -12,5 +12,5 @@ paperurl: "https://proceedings.iclr.cc/paper_files/paper/2026/hash/1a281c4e60aa2
 projecturl: "https://rlgnswk.github.io/PreserveAndPersonalize_ProjectPage/"
 codeurl: "https://github.com/rlgnswk/Preserve-and-Personalize"
 header:
-    teaser: /images/pubs/thumbs/preserve-and-personalize-iclr26.webp
+    teaser: /images/pubs/preserve-and-personalize-iclr26.png
 ---

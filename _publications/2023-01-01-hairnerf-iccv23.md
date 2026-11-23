@@ -12,6 +12,6 @@ paperurl: "https://openaccess.thecvf.com/content/ICCV2023/html/Chang_HairNeRF_Ge
 projecturl: ""
 codeurl: ""
 header:
-    teaser: /images/pubs/thumbs/hairnerf-iccv23.webp
+    teaser: /images/pubs/hairnerf-iccv23.png
 ---
 

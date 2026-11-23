@@ -1,41 +1,14 @@
 ---
-layout: default
+layout: archive
 title: "Publications"
 permalink: /publications/
-description: "Publications and preprints by GiHoon Kim on controllable generation, diffusion models, computer vision, and multimodal AI."
+author_profile: true
 ---
 
-<main id="main-content" class="site-page inner-page publications-page">
-  <header class="inner-hero">
-    <p class="eyebrow">Research output</p>
-    <h1>Publications</h1>
-    <p>Work on diffusion model adaptation, controllable generation, 3D vision, and multimodal AI. An asterisk denotes equal contribution.</p>
-    <nav class="section-tabs" aria-label="Publication categories">
-      <a href="#conferences">Conferences &amp; workshops</a>
-      <a href="#preprints">Preprints</a>
-      <a href="#domestic">Domestic conferences</a>
-    </nav>
-  </header>
+{% include base_path %}
 
-  {% assign ordered = site.publications | sort: "date" | reverse %}
-  <section id="conferences" class="publication-group" aria-labelledby="conferences-title">
-    <div class="publication-group__heading"><h2 id="conferences-title">Conferences &amp; workshops</h2><span>Peer-reviewed</span></div>
-    <div class="publication-list">
-      {% for post in ordered %}{% if post.category == "conference" %}{% include archive-single-publication.html %}{% endif %}{% endfor %}
-    </div>
-  </section>
+{% assign pubs = site.publications | sort: "date" | reverse %}
 
-  <section id="preprints" class="publication-group" aria-labelledby="preprints-title">
-    <div class="publication-group__heading"><h2 id="preprints-title">Preprints</h2><span>Working papers</span></div>
-    <div class="publication-list">
-      {% for post in ordered %}{% if post.category == "preprint" %}{% include archive-single-publication.html %}{% endif %}{% endfor %}
-    </div>
-  </section>
-
-  <section id="domestic" class="publication-group" aria-labelledby="domestic-title">
-    <div class="publication-group__heading"><h2 id="domestic-title">Domestic conferences</h2><span>Korea</span></div>
-    <div class="publication-list">
-      {% for post in ordered %}{% if post.category == "domestic" %}{% include archive-single-publication.html %}{% endif %}{% endfor %}
-    </div>
-  </section>
-</main>
+{% for post in pubs %}
+  {% include archive-single-publication.html %}
+{% endfor %}

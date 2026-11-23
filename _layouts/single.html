@@ -45,19 +45,6 @@ layout: default
       {% endunless %}
 
       <section class="page__content" itemprop="text">
-        {% if page.collection == 'publications' %}
-          {% if page.header.teaser %}<img class="pub-detail-image" src="{{ page.header.teaser | relative_url }}" alt="" loading="lazy">{% endif %}
-          {% if page.authors %}<p class="pub-authors">{{ page.authors }}</p>{% endif %}
-          {% if page.summary %}<p>{{ page.summary }}</p>{% endif %}
-          <div class="pub-links">
-            {% if page.paperurl != blank %}<a href="{{ page.paperurl }}" target="_blank" rel="noopener noreferrer">Paper</a>{% endif %}
-            {% if page.projecturl != blank %}<a href="{{ page.projecturl }}" target="_blank" rel="noopener noreferrer">Project</a>{% endif %}
-            {% if page.codeurl != blank %}<a href="{{ page.codeurl }}" target="_blank" rel="noopener noreferrer">Code</a>{% endif %}
-            {% if page.videourl != blank %}<a href="{{ page.videourl }}" target="_blank" rel="noopener noreferrer">Video</a>{% endif %}
-            {% if page.dataseturl != blank %}<a href="{{ page.dataseturl }}" target="_blank" rel="noopener noreferrer">Dataset</a>{% endif %}
-            {% if page.programurl != blank %}<a href="{{ page.programurl }}" target="_blank" rel="noopener noreferrer">Program</a>{% endif %}
-          </div>
-        {% endif %}
         {{ content }}
 
         {% if page.citation and page.paperurl and page.slidesurl and page.bibtexurl %}

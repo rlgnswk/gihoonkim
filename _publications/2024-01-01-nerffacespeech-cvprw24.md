@@ -12,6 +12,6 @@ paperurl: "https://arxiv.org/abs/2405.05749"
 projecturl: "https://rlgnswk.github.io/NeRFFaceSpeech_ProjectPage/"
 codeurl: "https://github.com/rlgnswk/NeRFFaceSpeech_Code"
 header:
-    teaser: /images/pubs/thumbs/nerffacespeech-cvprw24.webp
+    teaser: /images/pubs/nerffacespeech-cvprw24.png
 ---
 
