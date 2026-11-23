@@ -5,7 +5,7 @@ site_theme: "default"
 title: "GiHoon Kim"
 title_separator: "-"
 name: "GiHoon Kim"
-description: "Ph.D. Student @ Seoul National University | Generative Modeling / Controllable Generation"
+description: "Ph.D. student at Seoul National University researching controllable generation with diffusion models."
 
 # GitHub Pages project site
 url: "https://rlgnswk.github.io"
@@ -15,8 +15,8 @@ repository: "rlgnswk/gihoonkim"
 # IMPORTANT: Fix author fields for author_profile.html
 author:
   name: "GiHoon Kim"
-  avatar: "profile.jpg"
-  bio: "Ph.D. student in generative modeling & controllable generation."
+  avatar: "profile.webp"
+  bio: "Ph.D. student researching controllable generation with diffusion models."
   location: "Seoul, Republic of Korea"
   employer: "Seoul National University"
   email: "gihoon.kim@snu.ac.kr"

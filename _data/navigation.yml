@@ -1,8 +1,8 @@
 # Minimal header navigation (keep only what you want visible)
 
 main:
-  - title: "About"
-    url: /
+  - title: "Research"
+    url: /#research
 
   - title: "Publications"
     url: /publications/
