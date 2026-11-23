@@ -80,6 +80,6 @@ I am always happy to discuss research ideas or potential collaboration. Please f
 
 ## News
 
-- **2026 preprints**: [*Correcting Guided Diffusion Trajectories with Spectral Alignment*](https://arxiv.org/abs/2610.02753) and [*Safety for Whom?*](https://arxiv.org/abs/2610.17728).
+- **2026 preprint**: [*Correcting Guided Diffusion Trajectories with Spectral Alignment*](https://arxiv.org/abs/2610.02753).
 - **ICLR 2026**: [*Preserve and Personalize*](https://proceedings.iclr.cc/paper_files/paper/2026/hash/1a281c4e60aa2184525b4c098ff5bed5-Abstract-Conference.html).
 - Served as a reviewer for **NeurIPS 2026** and **ICLR 2027**.

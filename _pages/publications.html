@@ -9,6 +9,16 @@ author_profile: true
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
+<h2 class="archive__subtitle">International Conferences &amp; Preprints</h2>
 {% for post in pubs %}
-  {% include archive-single-publication.html %}
+  {% if post.category == "conference" or post.category == "preprint" %}
+    {% include archive-single-publication.html %}
+  {% endif %}
+{% endfor %}
+
+<h2 class="archive__subtitle">Domestic Conferences</h2>
+{% for post in pubs %}
+  {% if post.category == "domestic" %}
+    {% include archive-single-publication.html %}
+  {% endif %}
 {% endfor %}
